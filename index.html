@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mostra Cultural 2026 – Colégio Caminhos e Colinas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Nunito:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="./assets/ccc_logo.png">
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#temas">Temas</a>
+      <a href="#info">Informações</a>
+      <a href="#votacao" class="nav-cta">Votação</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#temas">Temas</a>
+      <a href="#info">Informações</a>
+      <a href="#votacao">Votação</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Colégio Caminhos e Colinas apresenta</p>
+          <h1 class="hero-title">Mostra<br>Cultural<br><em>2026</em></h1>
+          <p class="hero-sub">Venha conferir os trabalhos<br>de nossos alunos!</p>
+          <div class="hero-actions">
+            <a href="#temas" class="btn btn-primary">Ver Temas</a>
+            <a href="#info" class="btn btn-ghost">Informações</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <!-- CAROUSEL -->
+          <div class="carousel" id="carousel">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-slide">
+                <div class="slide-illustration hills-green">
+                  <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                      <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#c8e8f5" />
+                        <stop offset="100%" stop-color="#e8f6fc" />
+                      </linearGradient>
+                    </defs>
+                    <rect width="600" height="300" fill="url(#sky1)" />
+                    <ellipse cx="120" cy="80" rx="55" ry="35" fill="white" opacity=".9" />
+                    <ellipse cx="155" cy="72" rx="45" ry="30" fill="white" opacity=".95" />
+                    <ellipse cx="420" cy="65" rx="50" ry="32" fill="white" opacity=".85" />
+                    <ellipse cx="455" cy="58" rx="40" ry="26" fill="white" opacity=".9" />
+                    <path d="M0,220 Q150,160 300,200 Q450,240 600,180 L600,300 L0,300 Z" fill="#6BBF4E" />
+                    <path d="M0,250 Q120,210 260,230 Q400,250 600,215 L600,300 L0,300 Z" fill="#4A9E2E" />
+                    <path d="M0,270 Q200,255 400,265 Q500,270 600,260 L600,300 L0,300 Z" fill="#3A7E20" />
+                  </svg>
+                  <div class="slide-label">Trabalhos dos Alunos</div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-illustration paths-orange">
+                  <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                      <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#fde8c8" />
+                        <stop offset="100%" stop-color="#fef5e8" />
+                      </linearGradient>
+                    </defs>
+                    <rect width="600" height="300" fill="url(#sky2)" />
+                    <circle cx="480" cy="70" r="50" fill="#F4A03A" opacity=".6" />
+                    <circle cx="480" cy="70" r="35" fill="#F4A03A" opacity=".8" />
+                    <path d="M0,240 Q200,180 400,220 Q500,240 600,200 L600,300 L0,300 Z" fill="#c47e3a" />
+                    <path d="M0,260 Q150,245 300,255 Q450,265 600,245 L600,300 L0,300 Z" fill="#a05e20" />
+                    <path d="M250,300 Q270,220 290,300" stroke="#8B4A10" stroke-width="18" fill="none" opacity=".5" />
+                    <path d="M280,300 Q300,200 320,300" stroke="#8B4A10" stroke-width="14" fill="none" opacity=".4" />
+                  </svg>
+                  <div class="slide-label">Exposições e Apresentações</div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-illustration valley-purple">
+                  <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                      <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#e8d5f5" />
+                        <stop offset="100%" stop-color="#f5eeff" />
+                      </linearGradient>
+                    </defs>
+                    <rect width="600" height="300" fill="url(#sky3)" />
+                    <path d="M0,200 Q100,140 200,180 Q300,220 400,160 Q500,100 600,170 L600,300 L0,300 Z" fill="#9B59B6"
+                      opacity=".4" />
+                    <path d="M0,230 Q150,200 300,215 Q450,230 600,205 L600,300 L0,300 Z" fill="#7B2D8B" opacity=".7" />
+                    <path d="M0,260 Q200,250 400,258 Q500,262 600,252 L600,300 L0,300 Z" fill="#5A1570" />
+                    <circle cx="80" cy="130" r="8" fill="white" opacity=".6" />
+                    <circle cx="150" cy="110" r="5" fill="white" opacity=".5" />
+                    <circle cx="350" cy="90" r="7" fill="white" opacity=".55" />
+                    <circle cx="500" cy="120" r="6" fill="white" opacity=".5" />
+                  </svg>
+                  <div class="slide-label">Arte e Criatividade</div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#8249;</button>
+            <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">&#8250;</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEMAS -->
+    <section class="section" id="temas">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Temas</h2>
+          <p class="section-sub">Conheça os temas que norteiam os trabalhos dos nossos alunos nesta edição</p>
+        </div>
+        <div class="temas-grid">
+
+          <!-- CAMINHOS -->
+          <div class="tema-card tema-caminhos">
+            <div class="tema-header">
+              <div class="tema-icon">🛤️</div>
+              <h3>Caminhos</h3>
+            </div>
+            <table class="tema-table">
+              <thead>
+                <tr>
+                  <th>Turma</th>
+                  <th>Trabalho</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Turma A</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Turma B</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Turma C</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Turma D</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Turma E</td>
+                  <td>—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- COLINAS -->
+          <div class="tema-card tema-colinas">
+            <div class="tema-header">
+              <div class="tema-icon">⛰️</div>
+              <h3>Colinas</h3>
+            </div>
+            <table class="tema-table">
+              <thead>
+                <tr>
+                  <th>Turma</th>
+                  <th>Trabalho</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Turma F</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Turma G</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Turma H</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Turma I</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>Turma J</td>
+                  <td>—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO CARDS -->
+    <section class="section section-info" id="info">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Informações</h2>
+          <p class="section-sub">Tudo que você precisa saber para participar da Mostra Cultural</p>
+        </div>
+        <div class="info-grid" id="votacao">
+
+          <a href="#" class="info-card info-votacao" target="_blank" rel="noopener">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <div class="info-card-content">
+              <span class="info-card-label">Votação</span>
+              <span class="info-card-value">Acesse o link para votar</span>
+            </div>
+            <div class="info-card-arrow">→</div>
+          </a>
+
+          <div class="info-card info-data">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <div class="info-card-content">
+              <span class="info-card-label">Data</span>
+              <span class="info-card-value">Data da Mostra</span>
+            </div>
+          </div>
+
+          <div class="info-card info-endereco">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="info-card-content">
+              <span class="info-card-label">Endereço</span>
+              <span class="info-card-value">Endereço da Escola</span>
+            </div>
+          </div>
+
+          <div class="info-card info-contato">
+            <div class="info-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 7.29 7.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="info-card-content">
+              <span class="info-card-label">Contato</span>
+              <span class="info-card-value">Contato da Escola</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="./assets/ccc_logo.png">
+      </div>
+      <p class="footer-copy">© 2026 Mostra Cultural · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

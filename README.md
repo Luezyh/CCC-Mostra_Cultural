@@ -18,10 +18,8 @@ Site institucional desenvolvido para a **Mostra Cultural 2026** do Colégio Cami
 ## 🛠️ Tecnologias
 
 - HTML5 semântico
-- CSS3 (variáveis, flexbox, grid, animações)
-- JavaScript vanilla (sem dependências)
-- [Font Awesome 6](https://fontawesome.com/) para ícones
-- [Google Fonts](https://fonts.google.com/) — família Outfit
+- CSS3
+- JavaScript
 
 ---
 
@@ -29,24 +27,13 @@ Site institucional desenvolvido para a **Mostra Cultural 2026** do Colégio Cami
 
 ```
 /
-├── index.html       # Estrutura da página
-├── style.css        # Estilos e tema visual
-├── script.js        # Interatividade (slider, scroll, header)
+├── index.html      
+├── style.css        
+├── script.js       
 └── images/
-    ├── art.png      # Imagem da galeria — artes
-    └── science.png  # Imagem da galeria — ciências
+    ├── art.png      
+    └── science.png  
 ```
-
----
-
-## 🎨 Paleta de cores
-
-| Variável            | Cor        | Uso                        |
-|---------------------|------------|----------------------------|
-| `--primary-orange`  | `#ed6f39`  | Artes Visuais, destaques   |
-| `--primary-green`   | `#51ab33`  | Ciência e Tecnologia       |
-| `--primary-purple`  | `#572f87`  | Cor principal / logo       |
-| `--primary-cyan`    | `#50bcd4`  | Galeria, rodapé            |
 
 ---
 
@@ -64,7 +51,6 @@ Por ser um site estático, basta abrir o arquivo `index.html` diretamente no nav
 ## 📌 Observações
 
 - O slider da galeria foi implementado com JS puro, sem bibliotecas externas.
-- As imagens da galeria (`images/art.png`, `images/science.png`) devem ser adicionadas manualmente na pasta `/images`.
 - O site é responsivo para telas menores que 768px, com ajuste de tipografia e ocultação do menu de navegação.
 
 ---
